@@ -355,6 +355,43 @@ article .icon {
 
 /* PROJECTS SECTION */
 
+.project-img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+  transition: opacity 0.3s;
+}
+
+.project-img-container:hover .project-img {
+  opacity: 0.3;
+}
+
+.project-img-container::after {
+  content: attr(data-skills);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-img-container:hover::after {
+  opacity: 1;
+}
+
+/* Existing CSS */
 #projects {
   position: relative;
 }
@@ -379,6 +416,9 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+
+
+
 
 /* CONTACT */
 
@@ -430,3 +470,5 @@ footer {
 footer p {
   text-align: center;
 }
+
+
