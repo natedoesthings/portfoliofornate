@@ -1,2 +1,1 @@
-# portfoliofornate
-Nathanael Tesfaye's Portfolio
+# [Nathanael Tesfaye's Portfolio](https://natedoesthings.github.io/portfoliofornate/)
